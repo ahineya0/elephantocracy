@@ -12,7 +12,7 @@ namespace MapForm
 
         private Block[,] blocks;
 
-        // map не знает что за объекты есть
+        // map не знает чтo за объекты есть
         private List<IMapObject> objectsOnMap;
 
         public Map(int width, int height)
