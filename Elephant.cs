@@ -6,10 +6,11 @@ using DirectionForm;
 using IAttackForm;
 using FireResultForm;
 using MapForm;
+using IRotateForm;
 
 namespace ElephantoCracy
 {
-    public class Elephant : IMove, IAttack, IMapObject
+    public class Elephant : IMove, IAttack, IMapObject, IRotate
     {
         private int hp, speed, x, y;
         //private string skin;

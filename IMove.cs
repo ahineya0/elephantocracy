@@ -8,6 +8,5 @@ namespace IMoveForm
     public interface IMove
     {
         void Move(Direction dir);
-        void Rotate(Direction dir);
     }
 }

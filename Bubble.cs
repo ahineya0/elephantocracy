@@ -58,8 +58,6 @@ namespace BubbleForm
             MoveInternal();
         }
 
-        public void Rotate(Direction dir) { }
-
         private void MoveInternal()
         {
             if (!IsAlive) return;
