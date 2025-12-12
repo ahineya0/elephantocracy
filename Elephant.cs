@@ -5,13 +5,14 @@ using IMoveForm;
 using DirectionForm;
 using IAttackForm;
 using FireResultForm;
+using MapForm;
 
 namespace ElephantoCracy
 {
-    public class Elephant : IMove, IAttack
+    public class Elephant : IMove, IAttack, IMapObject
     {
-        private int hp, speed, cordX, cordY;
-        private string skin;
+        private int hp, speed, x, y;
+        //private string skin;
         private Direction direction;
 
         public int Hp
@@ -26,22 +27,16 @@ namespace ElephantoCracy
             set { speed = value; }
         }
 
-        public int CordX
+        public int X
         {
-            get { return cordX; }
-            set { cordX = value; }
+            get { return x; }
+            set { x = value; }
         }
 
-        public int CordY
+        public int Y
         {
-            get { return cordY; }
-            set { cordY = value; }
-        }
-
-        public string Skin
-        {
-            get { return skin; }
-            set { skin = value; }
+            get { return y; }
+            set { y = value; }
         }
 
         public Direction Direction
@@ -50,27 +45,28 @@ namespace ElephantoCracy
             set { direction = value; }
         }
 
+        public bool CanBePickedUp => false;
 
         public void Move(Direction dir)
         {
             if (direction == Direction.Up)
             {
-                cordY += speed;
+                Y += speed;
                 Rotate(dir);
             }
             else if (direction == Direction.Down)
             {
-                cordY -= speed;
+                Y -= speed;
                 Rotate(dir);
             }
             else if (direction == Direction.Left)
             {
-                cordX -= speed;
+                X -= speed;
                 Rotate(dir);
             }
             else if (direction == Direction.Right)
             {
-                cordX += speed;
+                X += speed;
                 Rotate(dir);
             }
         }
@@ -82,7 +78,7 @@ namespace ElephantoCracy
 
         public FireResult? Fire()
         {
-            return new FireResult(CordX, CordY, Direction);
+            return new FireResult(X, Y, Direction);
         }
 
     }

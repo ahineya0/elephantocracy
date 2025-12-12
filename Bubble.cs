@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Security.AccessControl;
 using System.Text;
 
-namespace elephantocracy
+namespace BubbleForm
 {
     public class Bubble : IMapObject, IMove
     {
