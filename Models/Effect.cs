@@ -3,15 +3,9 @@ using elephantocracy.Interfaces;
 
 namespace elephantocracy.Models
 {
-    public enum Effect
+    public class EffectModel : IMapObject
     {
-        Freeze,
-        SpeedBoost,
-        Life
-    }
-
-    public class EffectModel
-    {
+        public bool CanBePickedUp => true;
         public Effect EffectType { get; private set; }
         public int X { get; private set; }
         public int Y { get; private set; }
@@ -29,9 +23,8 @@ namespace elephantocracy.Models
         public void Update(float deltaTime)
         {
             ElapsedTime += deltaTime;
-            if (ElapsedTime > Duration)
         }
-
+        public bool IsInactive => elapsedTime > Duration;
         public void AppleTo(IEffectTarget target)
         {
             switch (EffectType)
