@@ -1,8 +1,9 @@
-﻿using System;
+﻿using elephantocracy.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace elephantocracy.Enums
+namespace elephantocracy.Structures
 {
     public struct FireResult
     {
