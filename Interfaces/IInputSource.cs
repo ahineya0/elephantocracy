@@ -1,6 +1,6 @@
 ﻿using elephantocracy.Enums;
 
-namespace InputForm
+namespace elephantocracy.Interfaces
 {
     public interface IInputSource
     {
