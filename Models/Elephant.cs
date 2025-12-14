@@ -43,29 +43,37 @@ namespace elephantocracy.Models
             set { direction = value; }
         }
 
+        public Elephant(int hp, int speed, int x, int y, Direction direction)
+        {
+            Hp = hp;
+            Speed = speed;
+            X = x;
+            Y  = y;
+            Direction = direction;
+        }
+
         public bool CanBePickedUp => false;
 
         public void Move(Direction dir)
         {
-            if (direction == Direction.Up)
+            Rotate(dir);
+            switch (Direction)
             {
-                Y += speed;
-                Rotate(dir);
-            }
-            else if (direction == Direction.Down)
-            {
-                Y -= speed;
-                Rotate(dir);
-            }
-            else if (direction == Direction.Left)
-            {
-                X -= speed;
-                Rotate(dir);
-            }
-            else if (direction == Direction.Right)
-            {
-                X += speed;
-                Rotate(dir);
+                case Direction.Up:
+                    Y += speed;
+                    break;
+                
+                case Direction.Down:
+                    Y -= speed;
+                    break;
+
+                case Direction.Left:
+                    X -= speed;
+                    break;
+
+                case Direction.Right:
+                    X += speed;
+                    break;
             }
         }
 
