@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using elephantocracy.Enums;
+using elephantocracy.Structures;
 
 namespace elephantocracy.Interfaces
 {

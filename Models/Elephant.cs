@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using elephantocracy.Enums;
 using elephantocracy.Interfaces;
+using elephantocracy.Structures;
 
 namespace elephantocracy.Models
 {
