@@ -87,5 +87,12 @@ namespace elephantocracy.Models
             return new FireResult(X, Y, Direction);
         }
 
+
+        public void TakeDamage(int damage)
+        {
+            Hp -= damage;
+        }
+
+        public bool IsDead => Hp <= 0;
     }
 }
