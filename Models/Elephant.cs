@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using IMoveForm;
-using DirectionForm;
-using IAttackForm;
-using FireResultForm;
-using MapForm;
-using IRotateForm;
+using elephantocracy.Enums;
+using elephantocracy.Interfaces;
 
-namespace ElephantoCracy
+namespace elephantocracy.Models
 {
     public class Elephant : IMove, IAttack, IMapObject, IRotate
     {

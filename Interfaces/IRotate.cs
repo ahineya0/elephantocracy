@@ -1,9 +1,9 @@
-﻿using DirectionForm;
+﻿using elephantocracy.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace IRotateForm
+namespace elephantocracy.Interfaces
 {
     public interface IRotate
     {

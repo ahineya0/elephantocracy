@@ -1,12 +1,11 @@
-﻿using DirectionForm;
-using IMoveForm;
-using MapForm;
+﻿using elephantocracy.Enums;
+using elephantocracy.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Security.AccessControl;
 using System.Text;
 
-namespace BubbleForm
+namespace elephantocracy.Models
 {
     public class Bubble : IMapObject, IMove
     {

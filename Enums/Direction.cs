@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DirectionForm
+namespace elephantocracy.Enums
 {
     public enum Direction
     {

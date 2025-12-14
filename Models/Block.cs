@@ -1,4 +1,4 @@
-﻿namespace BlockForm
+﻿namespace elephantocracy.Models
 {
     public class Block
     {

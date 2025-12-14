@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DirectionForm;
 
-namespace FireResultForm
+namespace elephantocracy.Enums
 {
     public struct FireResult
     {

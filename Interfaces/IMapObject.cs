@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MapForm
+namespace elephantocracy.Interfaces
 {
     public interface IMapObject
     {

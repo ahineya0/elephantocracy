@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("elephantocracy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d11186401a4ae1599fc67ae52de64affd90524b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("elephantocracy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("elephantocracy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DirectionForm;
-using FireResultForm;
+using elephantocracy.Enums;
 
-namespace IAttackForm
+namespace elephantocracy.Interfaces
 {
     public interface IAttack
     {

@@ -1,9 +1,9 @@
-﻿using BlockForm;
+﻿using elephantocracy.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MapForm
+namespace elephantocracy.Models
 {
     public class Map
     {

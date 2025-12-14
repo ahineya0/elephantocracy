@@ -1,0 +1,17 @@
+D:\Visual Studio repos\elephantocracy\bin\Debug\net10.0-windows\elephantocracy.exe
+D:\Visual Studio repos\elephantocracy\bin\Debug\net10.0-windows\elephantocracy.deps.json
+D:\Visual Studio repos\elephantocracy\bin\Debug\net10.0-windows\elephantocracy.runtimeconfig.json
+D:\Visual Studio repos\elephantocracy\bin\Debug\net10.0-windows\elephantocracy.dll
+D:\Visual Studio repos\elephantocracy\bin\Debug\net10.0-windows\elephantocracy.pdb
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.Form1.resources
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.csproj.GenerateResource.cache
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.AssemblyInfoInputs.cache
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.AssemblyInfo.cs
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.csproj.CoreCompileInputs.cache
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.sourcelink.json
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.dll
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\refint\elephantocracy.dll
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.pdb
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\elephantocracy.genruntimeconfig.cache
+D:\Visual Studio repos\elephantocracy\obj\Debug\net10.0-windows\ref\elephantocracy.dll

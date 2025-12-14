@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DirectionForm;
+using elephantocracy.Enums;
 
-namespace IMoveForm
+namespace elephantocracy.Interfaces
 {
     public interface IMove
     {

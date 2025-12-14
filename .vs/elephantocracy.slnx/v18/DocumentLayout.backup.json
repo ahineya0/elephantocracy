@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Visual Studio repos\\elephantocracy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4521706D-0A77-4D72-B51D-990F963E6E01}|elephantocracy.csproj|d:\\visual studio repos\\elephantocracy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4521706D-0A77-4D72-B51D-990F963E6E01}|elephantocracy.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{191414F4-12C6-1272-F6BC-353E81804287}|elephantocracy.csproj|d:\\visual studio repos\\elephantocracy\\enums\\fireresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{191414F4-12C6-1272-F6BC-353E81804287}|elephantocracy.csproj|solutionrelative:enums\\fireresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{191414F4-12C6-1272-F6BC-353E81804287}|elephantocracy.csproj|d:\\visual studio repos\\elephantocracy\\interfaces\\iattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{191414F4-12C6-1272-F6BC-353E81804287}|elephantocracy.csproj|solutionrelative:interfaces\\iattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{191414F4-12C6-1272-F6BC-353E81804287}|elephantocracy.csproj|d:\\visual studio repos\\elephantocracy\\enums\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{191414F4-12C6-1272-F6BC-353E81804287}|elephantocracy.csproj|solutionrelative:enums\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Visual Studio repos\\elephantocracy\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\Visual Studio repos\\elephantocracy\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "IAttack.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\elephantocracy\\Interfaces\\IAttack.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IAttack.cs",
+              "ToolTip": "D:\\Visual Studio repos\\elephantocracy\\Interfaces\\IAttack.cs*",
+              "RelativeToolTip": "Interfaces\\IAttack.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T14:32:07.552Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-14T09:33:01.505Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FireResult.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\elephantocracy\\Enums\\FireResult.cs",
+              "RelativeDocumentMoniker": "Enums\\FireResult.cs",
+              "ToolTip": "D:\\Visual Studio repos\\elephantocracy\\Enums\\FireResult.cs*",
+              "RelativeToolTip": "Enums\\FireResult.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:32:42.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Direction.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\elephantocracy\\Enums\\Direction.cs",
+              "RelativeDocumentMoniker": "Enums\\Direction.cs",
+              "ToolTip": "D:\\Visual Studio repos\\elephantocracy\\Enums\\Direction.cs*",
+              "RelativeToolTip": "Enums\\Direction.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:32:13.273Z",
+              "EditorCaption": ""
             }
           ]
         }
