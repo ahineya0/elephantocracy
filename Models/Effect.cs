@@ -1,17 +1,18 @@
 ﻿using System;
 using elephantocracy.Interfaces;
+using elephantocracy.Enums;
 
 namespace elephantocracy.Models
 {
     public class EffectModel : IMapObject
     {
         public bool CanBePickedUp => true;
-        public Effect EffectType { get; private set; }
+        public EffectType EffectType { get; private set; }
         public int X { get; private set; }
         public int Y { get; private set; }
         public float Duration { get; private set; }
         public float ElapsedTime { get; private set; }
-        publci Effect(Effect effectType, int x, int y, float duration)
+        public EffectModel(EffectType effectType, int x, int y, float duration)
         {
             EffectType = effectType;
             X = x;
@@ -24,7 +25,7 @@ namespace elephantocracy.Models
         {
             ElapsedTime += deltaTime;
         }
-        public bool IsInactive => elapsedTime > Duration;
+        public bool IsInactive => ElapsedTime > Duration;
         public void AppleTo(IEffectTarget target)
         {
             switch (EffectType)
