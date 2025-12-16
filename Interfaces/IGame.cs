@@ -7,6 +7,6 @@ namespace elephantocracy.Interfaces
     public interface IGame
     {
         void Initialize();
-        void Update(float deltaTime);
+        void Update();
     }
 }

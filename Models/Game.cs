@@ -32,7 +32,42 @@ namespace elephantocracy.Models
 
         public void Update()
         {
+            // Движение
+            var dir = _inputController.MoveDirection;
+            if (dir.HasValue)
+            {
+                foreach (var movable in _movables)
+                    movable.Move(dir.Value);
+            }
 
+            // Стрельба
+            if (_inputController.FirePressed)
+            {
+                foreach (var attacker in _attackers)
+                {
+                    var fireResult = attacker.Fire();
+                    if (fireResult.HasValue)
+                        SpawnBubble(fireResult.Value);
+                }
+
+                _inputController.Reset();
+            }
+
+            // Для пузырей
+            foreach (var bubble in _mapObjects.OfType<Bubble>())
+            {
+                bubble.Move(bubble.Direction);
+            }
+        }
+
+        private void SpawnBubble(FireResult fire)
+        {
+            var bubble = new Bubble(fire.X, fire.Y, fire.Direction);
+
+            _map.AddMapObject(bubble);
+
+            _mapObjects.Add(bubble);
+            _movables.Add(bubble);
         }
     }
 }
