@@ -57,7 +57,11 @@ namespace elephantocracy.Models
             foreach (var bubble in _mapObjects.OfType<Bubble>())
             {
                 bubble.Move(bubble.Direction);
+                HandleBubbleCollisions();
             }
+
+            // Очистка 
+            Cleanup();
         }
 
         private void SpawnBubble(FireResult fire)
@@ -68,6 +72,52 @@ namespace elephantocracy.Models
 
             _mapObjects.Add(bubble);
             _movables.Add(bubble);
+        }
+        
+        private void HandleBubbleCollisions()
+        {
+            foreach (var bubble in _mapObjects.OfType<Bubble>())
+            {
+                if (!_map.InBounds(bubble.X, bubble.Y))
+                {
+                    bubble.Destroy();
+                    continue;
+                }
+
+                var block = _map.GetBlock(bubble.X, bubble.Y);
+                if (block != null && !block.IsShootThrough)
+                {
+                    if (!block.IsDestructible)
+                    {
+                        block.TakeDamage(1);
+                    }
+
+                    bubble.Destroy();
+                    continue;
+                }
+
+                foreach (var enemy in _mapObjects.OfType<Enemy>())
+                {
+                    if (enemy.X == bubble.X && enemy.Y == bubble.Y)
+                    {
+                        enemy.TakeDamage(1);
+                        bubble.Destroy();
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void Cleanup()
+        {
+            var deadBubbles = _mapObjects.OfType<Bubble>().Where(b => !b.IsAlive).ToList();
+
+            foreach (var bubble in deadBubbles)
+            {
+                _map.RemoveMapObject(bubble);
+                _mapObjects.Remove(bubble);
+                _movables.Remove(bubble);
+            }
         }
     }
 }
