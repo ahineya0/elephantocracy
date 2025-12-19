@@ -4,17 +4,15 @@ using elephantocracy.Enums;
 
 namespace elephantocracy.Models
 {
-    public class EffectModel : IMapObject
+    public abstract class Effect : IMapObject, IEffect
     {
         public bool CanBePickedUp => true;
-        public EffectType EffectType { get; private set; }
         public int X { get; private set; }
         public int Y { get; private set; }
         public float Duration { get; private set; }
         public float ElapsedTime { get; private set; }
-        public EffectModel(EffectType effectType, int x, int y, float duration)
+        public Effect(int x, int y, float duration)
         {
-            EffectType = effectType;
             X = x;
             Y = y;
             Duration = duration;
@@ -26,22 +24,7 @@ namespace elephantocracy.Models
             ElapsedTime += deltaTime;
         }
         public bool IsInactive => ElapsedTime > Duration;
-        public void AppleTo(IEffectTarget target)
-        {
-            switch (EffectType)
-            {
-                case EffectType.Freeze:
-                    target.ApplyFreeze();  
-                    break;
-                case EffectType.SpeedBoost:
-                    target.ApplySpeedBoost();  
-                    break;
-                case EffectType.Life:
-                    target.AddLife();  
-                    break;
-                default:
-                    break;
-            }
-        }
+        public abstract void ApplyTo(object target);
+        public abstract void RemoveFrom(object target);
     }
 }

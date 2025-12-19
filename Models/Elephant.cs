@@ -7,7 +7,7 @@ using elephantocracy.Structures;
 
 namespace elephantocracy.Models
 {
-    public class Elephant : IMove, IAttack, IMapObject, IRotate
+    public class Elephant : IMove, IAttack, IMapObject, IRotate, IEntityStats
     {
         private int hp, speed, x, y;
         //private string skin;
