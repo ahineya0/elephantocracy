@@ -59,11 +59,11 @@ namespace elephantocracy.Models
             switch (Direction)
             {
                 case Direction.Up:
-                    Y += speed;
+                    Y -= speed;
                     break;
 
                 case Direction.Down:
-                    Y -= speed;
+                    Y += speed;
                     break;
 
                 case Direction.Left:
