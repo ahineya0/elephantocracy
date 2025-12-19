@@ -87,10 +87,8 @@ namespace elephantocracy.Models
                 var block = _map.GetBlock(bubble.X, bubble.Y);
                 if (block != null && !block.IsShootThrough)
                 {
-                    if (!block.IsDestructible)
-                    {
+                    if (block.IsDestructible)
                         block.TakeDamage(1);
-                    }
 
                     bubble.Destroy();
                     continue;
