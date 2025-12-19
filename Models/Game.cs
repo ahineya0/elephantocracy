@@ -1,4 +1,5 @@
-﻿using elephantocracy.Interfaces;
+﻿using elephantocracy.Enums;
+using elephantocracy.Interfaces;
 using elephantocracy.Structures;
 using System;
 using System.Collections.Generic;
@@ -37,7 +38,24 @@ namespace elephantocracy.Models
             if (dir.HasValue)
             {
                 foreach (var movable in _movables)
-                    movable.Move(dir.Value);
+                {
+                    if (movable is IMapObject obj)
+                    {
+                        int newX = obj.X;
+                        int newY = obj.Y;
+
+                        switch (dir.Value)
+                        {
+                            case Direction.Up: newY -= 1; break;
+                            case Direction.Down: newY += 1; break;
+                            case Direction.Left: newX -= 1; break;
+                            case Direction.Right: newX += 1; break;
+                        }
+
+                        if (_map.IsWalkable(newX, newY))
+                            movable.Move(dir.Value);
+                    }
+                }
             }
 
             // Стрельба
