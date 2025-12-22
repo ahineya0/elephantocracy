@@ -26,7 +26,6 @@ namespace elephantocracy.Models
             };
         }
 
-        // Простой метод сохранения любого объекта
         public void Save<T>(T obj, string fileName)
         {
             try
@@ -42,7 +41,6 @@ namespace elephantocracy.Models
             }
         }
 
-        // Простой метод загрузки
         public T Load<T>(string fileName)
         {
             try
@@ -61,7 +59,6 @@ namespace elephantocracy.Models
             }
         }
 
-        // Сохраняем игру
         public void SaveGame(Game game, Map map, string saveName)
         {
             try
@@ -85,7 +82,6 @@ namespace elephantocracy.Models
             }
         }
 
-        // Загружаем игру
         public (Game game, Map map) LoadGame(string saveName)
         {
             try

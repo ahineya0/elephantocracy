@@ -12,12 +12,18 @@ namespace elephantocracy.Models
 
         public Direction? MoveDirection 
         { 
-            get => (Direction)_random.Next(0, 3);
+            get
+            {
+                if (_random.Next(0, 100) < 70)
+                    return null;
+
+                return (Direction)_random.Next(0, 4);
+            }
         }
 
         public bool FirePressed
         {
-            get => _random.Next(0, 100) < 5;
+            get => _random.Next(0, 100) < 4;
         }
 
     }
