@@ -7,8 +7,10 @@ using elephantocracy.Structures;
 
 namespace elephantocracy.Models
 {
-    public class Enemy : IMove, IAttack, IMapObject, IRotate, IEntityStats
+    public class Enemy : IMove, IAttack, IMapObject, IRotate, IEntityStats, ISerializableModel
     {
+        public string GetFileName() => "enemy";
+
         private int hp, speed, x, y;
         private Direction direction;
         public IInputSource Brain { get; set; }

@@ -9,6 +9,8 @@ namespace elephantocracy.Models
 {
     public class Elephant : IMove, IAttack, IMapObject, IRotate, IEntityStats
     {
+        public string GetFileName() => "elephant";
+
         private int hp, speed, x, y;
         //private string skin;
         private Direction direction;
