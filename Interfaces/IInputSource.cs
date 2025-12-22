@@ -6,6 +6,5 @@ namespace elephantocracy.Interfaces
     {
         Direction? MoveDirection { get; }
         bool FirePressed { get; }
-        void Reset();
     }
 }

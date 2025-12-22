@@ -11,7 +11,7 @@ namespace elephantocracy.Models
     {
         private int hp, speed, x, y;
         private Direction direction;
-
+        public IInputSource Brain { get; set; }
         public int Hp
         {
             get { return hp; }
@@ -49,6 +49,7 @@ namespace elephantocracy.Models
             X = x;
             Y  = y;
             Direction = direction;
+            Brain = new RandomAIController();
         }
 
         public bool CanBePickedUp => false;

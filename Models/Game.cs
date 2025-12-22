@@ -31,19 +31,21 @@ namespace elephantocracy.Models
 
         private void HandleMovement()
         {
-            var dir = _inputController.MoveDirection;
-            if (!dir.HasValue)
-                return;
-
-            foreach (var movable in Objects.OfType<IMove>())
+            foreach (var obj in Objects)
             {
-                if (movable is not IMapObject obj)
-                    continue;
+                Direction? dir = null;
 
-                var (newX, newY) = GetNextPosition(obj.X, obj.Y, dir.Value);
+                if (obj is Elephant)
+                    dir = _inputController.MoveDirection;
+                else if (obj is Enemy enemy && enemy.Brain != null)
+                    dir = enemy.Brain.MoveDirection;
 
-                if (_map.IsWalkable(newX, newY))
-                    movable.Move(dir.Value);
+                if (dir.HasValue && obj is IMove movable)
+                {
+                    var (newX, newY) = GetNextPosition(obj.X, obj.Y, dir.Value);
+                    if (_map.IsWalkable(newX, newY))
+                        movable.Move(dir.Value);
+                }
             }
         }
 
@@ -61,21 +63,27 @@ namespace elephantocracy.Models
 
         private void HandleShooting()
         {
-            if (!_inputController.FirePressed)
-                return;
-
-            var attackers = Objects.OfType<IAttack>().ToList();
-
-            foreach (var attacker in attackers)
+            foreach (var attacker in Objects.OfType<IAttack>().ToList())
             {
-                var fireResult = attacker.Fire();
-                if (fireResult.HasValue)
-                    SpawnBubble(fireResult.Value);
+                bool wantsToFire = false;
+
+                if (attacker is Elephant)
+                    wantsToFire = _inputController.FirePressed;
+                else if (attacker is Enemy enemy && enemy.Brain != null)
+                    wantsToFire = enemy.Brain.FirePressed;
+
+                if (wantsToFire)
+                {
+                    var fireResult = attacker.Fire();
+                    if (fireResult.HasValue)
+                    {
+                        SpawnBubble(fireResult.Value);
+                    }
+                }
             }
 
             _inputController.Reset();
         }
-
 
         private void SpawnBubble(FireResult fire)
         {
