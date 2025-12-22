@@ -37,7 +37,7 @@
             BackColor = SystemColors.GrayText;
             ClientSize = new Size(426, 427);
             Name = "GameForm";
-            Text = "Уровень 1";
+            Text = "elephantocracy";
             FormClosed += GameForm_FormClosed;
             ResumeLayout(false);
         }

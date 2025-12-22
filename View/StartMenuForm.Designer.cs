@@ -30,14 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartMenuForm));
             btn1LVL = new Button();
-            button1 = new Button();
-            button2 = new Button();
+            btnLVL2 = new Button();
+            btnLVL3 = new Button();
+            tittle = new Label();
             SuspendLayout();
             // 
             // btn1LVL
             // 
             btn1LVL.BackColor = SystemColors.ActiveCaption;
-            btn1LVL.Location = new Point(45, 195);
+            btn1LVL.Location = new Point(44, 276);
             btn1LVL.Name = "btn1LVL";
             btn1LVL.Size = new Size(225, 72);
             btn1LVL.TabIndex = 0;
@@ -45,48 +46,61 @@
             btn1LVL.UseVisualStyleBackColor = false;
             btn1LVL.Click += btn1LVL_Click;
             // 
-            // button1
+            // btnLVL2
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(301, 195);
-            button1.Name = "button1";
-            button1.Size = new Size(225, 72);
-            button1.TabIndex = 1;
-            button1.Text = "2 уровень";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += btn2LVL_Click;
+            btnLVL2.BackColor = SystemColors.ActiveCaption;
+            btnLVL2.Location = new Point(303, 276);
+            btnLVL2.Name = "btnLVL2";
+            btnLVL2.Size = new Size(225, 72);
+            btnLVL2.TabIndex = 1;
+            btnLVL2.Text = "2 уровень";
+            btnLVL2.UseVisualStyleBackColor = false;
+            btnLVL2.Click += btn2LVL_Click;
             // 
-            // button2
+            // btnLVL3
             // 
-            button2.BackColor = SystemColors.ActiveCaption;
-            button2.Location = new Point(554, 195);
-            button2.Name = "button2";
-            button2.Size = new Size(225, 72);
-            button2.TabIndex = 2;
-            button2.Text = "3 уровень";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += btn3LVL_Click;
+            btnLVL3.BackColor = SystemColors.ActiveCaption;
+            btnLVL3.Location = new Point(563, 276);
+            btnLVL3.Name = "btnLVL3";
+            btnLVL3.Size = new Size(225, 72);
+            btnLVL3.TabIndex = 2;
+            btnLVL3.Text = "3 уровень";
+            btnLVL3.UseVisualStyleBackColor = false;
+            btnLVL3.Click += btn3LVL_Click;
+            // 
+            // tittle
+            // 
+            tittle.AutoSize = true;
+            tittle.Font = new Font("Rockwell Condensed", 100F);
+            tittle.Location = new Point(53, 50);
+            tittle.Name = "tittle";
+            tittle.Size = new Size(702, 157);
+            tittle.TabIndex = 3;
+            tittle.Text = "elephantocracy";
             // 
             // StartMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(818, 450);
+            Controls.Add(tittle);
+            Controls.Add(btnLVL3);
+            Controls.Add(btnLVL2);
             Controls.Add(btn1LVL);
             Name = "StartMenuForm";
             Text = "Начало игры";
             TransparencyKey = Color.FromArgb(255, 192, 128);
             FormClosed += StartMenuForm_FormClosed;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button btn1LVL;
-        private Button button1;
-        private Button button2;
+        private Button btnLVL2;
+        private Button btnLVL3;
+        private Label tittle;
     }
 }
