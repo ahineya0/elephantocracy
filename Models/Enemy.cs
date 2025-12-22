@@ -92,7 +92,8 @@ namespace elephantocracy.Models
 
         public void TakeDamage(int damage)
         {
-            Hp -= damage;
+            if (damage >= 0 && Hp > 0)
+                Hp -= damage;
         }
 
         public bool IsDead => Hp <= 0;

@@ -17,7 +17,7 @@
         }
         public void TakeDamage(int damage)
         {
-            if (IsDestructible && Health > 0)
+            if (IsDestructible && damage >= 0 && Health > 0)
                 Health -= damage;
         }
         public bool IsDestroyed()
