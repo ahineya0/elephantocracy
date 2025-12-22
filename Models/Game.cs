@@ -127,7 +127,7 @@ namespace elephantocracy.Models
             {
                 if (target is IMapObject obj && obj.X == bubble.X && obj.Y == bubble.Y)
                 {
-                    target.Hp -= 1;
+                    target.TakeDamage(1);
                     bubble.Destroy();
                     return;
                 }
@@ -140,7 +140,7 @@ namespace elephantocracy.Models
 
             foreach (var obj in deadObjects)
                 Objects.Remove(obj);
-            Objects.RemoveAll(obj => obj is IEntityStats stats && stats.Hp <= 0);
+            Objects.RemoveAll(obj => obj is IEntityStats stats && stats.IsDead);
         }
 
         public void SetInputController(InputController input)

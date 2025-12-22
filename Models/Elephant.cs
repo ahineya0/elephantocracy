@@ -12,7 +12,7 @@ namespace elephantocracy.Models
         public string GetFileName() => "elephant";
 
         private int hp, speed, x, y;
-        //private string skin;
+
         private Direction direction;
 
         public int Hp

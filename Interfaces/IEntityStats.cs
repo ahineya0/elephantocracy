@@ -16,5 +16,8 @@ namespace elephantocracy.Interfaces
         public int Y { get; set; }
 
         public Direction Direction { get; set; }
-    }
+        public void TakeDamage(int damage);
+
+        public bool IsDead { get; }
+}
 }
