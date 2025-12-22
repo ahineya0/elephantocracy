@@ -66,25 +66,17 @@ namespace elephantocracy.Models
         {
             try
             {
-                // Создаем подпапку для сохранения
                 string savePath = Path.Combine(_saveDirectory, saveName);
                 if (!Directory.Exists(savePath))
                     Directory.CreateDirectory(savePath);
 
-                // Собираем данные для сохранения
                 var saveData = new GameSaveData
                 {
-                    MapWidth = map.Width,
-                    MapHeight = map.Height,
-                    Elephant = game.Objects.OfType<Elephant>()
-                        .Select(e => new ElephantData(e))
-                        .FirstOrDefault(),
-                    Enemies = game.Objects.OfType<Enemy>()
-                        .Select(e => new EnemyData(e))
-                        .ToList()
+                    SavedMap = map,
+                    Elephant = game.Objects.OfType<Elephant>().Select(e => new ElephantData(e)).FirstOrDefault(),
+                    Enemies = game.Objects.OfType<Enemy>().Select(e => new EnemyData(e)).ToList()
                 };
 
-                // Сохраняем все в один файл
                 Save(saveData, Path.Combine(saveName, "save.json"));
             }
             catch (Exception ex)
@@ -98,17 +90,13 @@ namespace elephantocracy.Models
         {
             try
             {
-                // Загружаем данные
                 var saveData = Load<GameSaveData>(Path.Combine(saveName, "save.json"));
 
-                // Восстанавливаем карту
-                var map = new Map(saveData.MapWidth, saveData.MapHeight);
+                var map = saveData.SavedMap;
 
-                // Создаем новую игру
                 var input = new InputController(Keys.W, Keys.S, Keys.A, Keys.D, Keys.Space);
                 var game = new Game(map, input);
 
-                // Восстанавливаем объекты
                 if (saveData.Elephant != null)
                     game.Objects.Add(saveData.Elephant.ToElephant());
 
