@@ -28,7 +28,7 @@ namespace elephantocracy.Presenter
 
             LoadInitialMap();
 
-            _timer = new System.Windows.Forms.Timer { Interval = 50 };
+            _timer = new System.Windows.Forms.Timer { Interval = 80 };
             _timer.Tick += (s, e) => { _game.Update(); _view.RefreshView(); };
             _timer.Start();
         }
