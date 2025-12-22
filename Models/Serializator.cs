@@ -125,5 +125,12 @@ namespace elephantocracy.Models
                 throw;
             }
         }
+
+        public Map LoadMap(string fileName)
+        {
+            string path = Path.Combine("GameSaves", fileName);
+            string json = File.ReadAllText(path);
+            return JsonSerializer.Deserialize<Map>(json);
+        }
     }
 }

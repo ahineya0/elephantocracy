@@ -20,7 +20,7 @@ namespace elephantocracy
 
             _serializator = new Serializator("GameSaves");
 
-            _map = new Map(30, 30);
+            _map = _serializator.LoadMap("Map.json");
             _input = new InputController(Keys.W, Keys.S, Keys.A, Keys.D, Keys.Space);
 
             _game = new Game(_map, _input);
@@ -117,6 +117,19 @@ namespace elephantocracy
         }
         private void DrawMap(Graphics g)
         {
+            for (int x = 0; x < _map.Width; x++)
+            {
+                for (int y = 0; y < _map.Height; y++)
+                {
+                    Block block = _map.GetBlock(x, y);
+                    Brush blockBrush = (block != null) ? GetBrushForBlock(block) : Brushes.White;
+
+                    g.FillRectangle(blockBrush, x * CellSize, y * CellSize, CellSize, CellSize);
+
+                    g.DrawRectangle(Pens.LightGray, x * CellSize, y * CellSize, CellSize, CellSize);
+                }
+            }
+
             foreach (var obj in _game.Objects)
             {
                 Brush brush = Brushes.Black;
@@ -136,6 +149,16 @@ namespace elephantocracy
                     CellSize
                 );
             }
+        }
+        private Brush GetBrushForBlock(Block block)
+        {
+            if (!block.IsWalkable && block.Health >= 3)
+                return Brushes.DarkRed;
+
+            if (!block.IsWalkable && block.Health > 0)
+                return Brushes.Orange;
+
+            return Brushes.LightGreen;
         }
     }
 }

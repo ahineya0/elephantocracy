@@ -10,20 +10,29 @@ namespace elephantocracy.Models
         public int Width { get; set; }
         public int Height { get; set; }
 
-        private Block[,] blocks;
+        public Block[][] Blocks { get; set; }
 
+        public Map() { }
         public Map(int width, int height)
         {
-            this.Width = width;
-            this.Height = height;
+            Width = width;
+            Height = height;
 
-            blocks = new Block[width, height];
+            Blocks = new Block[width][];
+            for (int x = 0; x < width; x++)
+            {
+                Blocks[x] = new Block[height];
+                for (int y = 0; y < height; y++)
+                {
+                    Blocks[x][y] = new Block(true, true);
+                }
+            }
         }
 
         public Block GetBlock(int x, int y)
         {
             if (InBounds(x, y))
-                return blocks[x, y];
+                return Blocks[x][y];
             return null;
         }
 
@@ -38,7 +47,7 @@ namespace elephantocracy.Models
             if (!InBounds(x, y))
                 return false;
 
-            Block block = blocks[x, y];
+            Block block = Blocks[x][y];
             return block == null || block.IsWalkable;
         }
 
@@ -47,7 +56,7 @@ namespace elephantocracy.Models
             if (!InBounds(x, y))
                 return false;
 
-            Block block = blocks[x, y];
+            Block block = Blocks[x][y];
             return block == null || block.IsShootThrough;
         }
 
@@ -55,8 +64,8 @@ namespace elephantocracy.Models
         {
             if (!InBounds(x, y)) return;
 
-            if (blocks[x, y] != null && blocks[x, y].IsDestructible)
-                blocks[x, y] = null;
+            if (Blocks[x][y] != null && Blocks[x][y].IsDestructible)
+                Blocks[x][y] = null;
         }
     }
 }
