@@ -1,0 +1,2456 @@
+{
+  "SavedMap": {
+    "Width": 20,
+    "Height": 20,
+    "Blocks": [
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        }
+      ],
+      [
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 67,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        }
+      ],
+      [
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        }
+      ],
+      [
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 4,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ],
+      [
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 5,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": false,
+          "IsShootThrough": false,
+          "Health": 2,
+          "IsDestructible": true
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        },
+        {
+          "IsWalkable": true,
+          "IsShootThrough": true,
+          "Health": 0,
+          "IsDestructible": false
+        }
+      ]
+    ]
+  },
+  "Elephant": {
+    "Hp": 3,
+    "Speed": 1,
+    "X": 18,
+    "Y": 0,
+    "Direction": "Right"
+  },
+  "Enemies": []
+}
