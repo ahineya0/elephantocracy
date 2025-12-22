@@ -1,5 +1,6 @@
 using elephantocracy.Enums;
 using elephantocracy.Models;
+using elephantocracy.Services;
 
 namespace elephantocracy
 {
@@ -10,6 +11,7 @@ namespace elephantocracy
         private InputController _input;
         private System.Windows.Forms.Timer _timer;
         private Serializator _serializator;
+        ISpawnOnMapService _spawnService;
 
         private int CellSize = 20;
 
@@ -21,12 +23,16 @@ namespace elephantocracy
             _serializator = new Serializator("GameSaves");
 
             _map = _serializator.LoadMap("Map.json");
+
+            _spawnService = new SpawnOnMapService();
+            (int plX, int plY) = _spawnService.GetPlayerSpawn(_map);
+
             _input = new InputController(Keys.W, Keys.S, Keys.A, Keys.D, Keys.Space);
 
             _game = new Game(_map, _input);
 
-            _game.Objects.Add(new Elephant(3, 1, 5, 5, Direction.Up));
-            _game.Objects.Add(new Enemy(2, 1, 10, 10, Direction.Left));
+            _game.Objects.Add(new Elephant(3, 1, plX, plY, Direction.Up));
+            _game.Objects.Add(new Enemy(2, 0, 10, 10, Direction.Left));
 
 
             _timer = new System.Windows.Forms.Timer();
