@@ -123,11 +123,11 @@ namespace elephantocracy.Models
                 return;
             }
 
-            foreach (var enemy in Objects.OfType<Enemy>())
+            foreach (var target in Objects.OfType<IEntityStats>().ToList())
             {
-                if (enemy.X == bubble.X && enemy.Y == bubble.Y)
+                if (target is IMapObject obj && obj.X == bubble.X && obj.Y == bubble.Y)
                 {
-                    enemy.TakeDamage(1);
+                    target.Hp -= 1;
                     bubble.Destroy();
                     return;
                 }
@@ -140,6 +140,7 @@ namespace elephantocracy.Models
 
             foreach (var obj in deadObjects)
                 Objects.Remove(obj);
+            Objects.RemoveAll(obj => obj is IEntityStats stats && stats.Hp <= 0);
         }
 
         public void SetInputController(InputController input)
