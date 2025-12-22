@@ -3,7 +3,7 @@ using elephantocracy.Models;
 
 namespace elephantocracy
 {
-    public partial class Form1 : Form
+    public partial class GameForm : Form
     {
         private Map _map;
         private Game _game;
@@ -13,7 +13,7 @@ namespace elephantocracy
 
         private int CellSize = 20;
 
-        public Form1()
+        public GameForm()
         {
             InitializeComponent();
             DoubleBuffered = true;
@@ -39,7 +39,6 @@ namespace elephantocracy
             _timer.Start();
         }
 
-        // Сохранение игры
         private void SaveGame(string saveName)
         {
             try
@@ -53,7 +52,6 @@ namespace elephantocracy
             }
         }
 
-        // Загрузка игры
         private void LoadGame(string saveName)
         {
             try
@@ -62,7 +60,6 @@ namespace elephantocracy
                 _game = game;
                 _map = map;
 
-                // Обновляем input контроллер в игре
                 _game.SetInputController(_input);
 
                 Invalidate();
@@ -76,7 +73,6 @@ namespace elephantocracy
             }
         }
 
-        // Обработчики клавиш
         protected override void OnKeyDown(KeyEventArgs e)
         {
             base.OnKeyDown(e);
@@ -97,13 +93,6 @@ namespace elephantocracy
                     break;
             }
         }
-
-
-        //protected override void OnKeyDown(KeyEventArgs e)
-        //{
-        //    base.OnKeyDown(e);
-        //    _input.OnKeyDown(e.KeyCode);
-        //}
 
         protected override void OnKeyUp(KeyEventArgs e)
         {

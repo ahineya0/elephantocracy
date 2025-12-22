@@ -79,9 +79,7 @@ namespace elephantocracy.Models
                 {
                     var fireResult = attacker.Fire();
                     if (fireResult.HasValue)
-                    {
                         SpawnBubble(fireResult.Value);
-                    }
                 }
             }
 
@@ -115,7 +113,11 @@ namespace elephantocracy.Models
             if (block != null && !block.IsShootThrough)
             {
                 if (block.IsDestructible)
+                {
                     block.TakeDamage(1);
+                    if (block.IsDestroyed())
+                        _map.DestroyBlock(bubble.X, bubble.Y);
+                }
 
                 bubble.Destroy();
                 return;
@@ -134,10 +136,7 @@ namespace elephantocracy.Models
 
         private void Cleanup()
         {
-            var deadObjects = Objects
-                .OfType<Bubble>()
-                .Where(b => !b.IsAlive)
-                .ToList();
+            var deadObjects = Objects.OfType<Bubble>().Where(b => !b.IsAlive).ToList();
 
             foreach (var obj in deadObjects)
                 Objects.Remove(obj);

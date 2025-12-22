@@ -65,7 +65,7 @@ namespace elephantocracy.Models
             if (!InBounds(x, y)) return;
 
             if (Blocks[x][y] != null && Blocks[x][y].IsDestructible)
-                Blocks[x][y] = null;
+                Blocks[x][y] = new Block(true, true);
         }
     }
 }

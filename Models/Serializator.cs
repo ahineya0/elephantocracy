@@ -102,9 +102,6 @@ namespace elephantocracy.Models
 
                 foreach (var enemyData in saveData.Enemies)
                     game.Objects.Add(enemyData.ToEnemy());
-
-
-                Console.WriteLine($"Загружено: 1 слон, {saveData.Enemies.Count} врагов");
                 return (game, map);
             }
             catch (Exception ex)
