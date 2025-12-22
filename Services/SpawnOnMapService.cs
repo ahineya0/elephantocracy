@@ -35,5 +35,17 @@ namespace elephantocracy.Services
             }
             return (0, 0);
         }
+        public (int X, int Y) GetPlaceToSpawn(Map map)
+        {
+            for (int x = 0; x < map.Width; x++)
+            {
+                for (int y = 0; y < map.Height; y++)
+                {
+                    if (map.IsWalkable(x, y))
+                        return (x, y);
+                }
+            }
+            return (0, 0);
+        }
     }
 }
