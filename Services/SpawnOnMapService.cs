@@ -35,16 +35,24 @@ namespace elephantocracy.Services
             }
             return (0, 0);
         }
+        private readonly Random _random = new Random();
+
         public (int X, int Y) GetPlaceToSpawn(Map map)
         {
+            var walkableSpots = new List<(int X, int Y)>();
+
             for (int x = 0; x < map.Width; x++)
             {
                 for (int y = 0; y < map.Height; y++)
                 {
                     if (map.IsWalkable(x, y))
-                        return (x, y);
+                        walkableSpots.Add((x, y));
                 }
             }
+
+            if (walkableSpots.Count > 0)
+                return walkableSpots[_random.Next(walkableSpots.Count)];
+
             return (0, 0);
         }
     }

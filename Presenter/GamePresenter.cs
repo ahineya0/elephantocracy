@@ -43,9 +43,9 @@ namespace elephantocracy.Presenter
             _game.Objects.Add(new Elephant(3, 1, plX, plY, Direction.Up));
             for (int i = 0; i < lvlNum; i++)
             {
-
+                (int enX, int enY) = spawnService.GetPlaceToSpawn(_map);
+                _game.Objects.Add(new Enemy(2, 1, enX, enY, Direction.Left));
             }
-            _game.Objects.Add(new Enemy(2, 1, 10, 10, Direction.Left));
         }
 
         public void HandleKeyDown(Keys key)
