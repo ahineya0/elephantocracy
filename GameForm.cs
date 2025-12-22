@@ -32,7 +32,7 @@ namespace elephantocracy
             _game = new Game(_map, _input);
 
             _game.Objects.Add(new Elephant(3, 1, plX, plY, Direction.Up));
-            _game.Objects.Add(new Enemy(2, 0, 10, 10, Direction.Left));
+            _game.Objects.Add(new Enemy(2, 1, 10, 10, Direction.Left));
 
 
             _timer = new System.Windows.Forms.Timer();
