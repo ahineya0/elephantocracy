@@ -20,27 +20,31 @@ namespace elephantocracy.Presenter
         public Game Game => _game;
         public Map Map => _map;
 
-        public GamePresenter(IGameView view)
+        public GamePresenter(IGameView view, int lvlNum)
         {
             _view = view;
-            _serializator = new Serializator("GameSaves");
+            _serializator = new Serializator("GameSaves" + lvlNum.ToString());
             _input = new InputController(Keys.W, Keys.S, Keys.A, Keys.D, Keys.Space);
 
-            LoadInitialMap();
+            LoadInitialMap(lvlNum);
 
             _timer = new System.Windows.Forms.Timer { Interval = 80 };
             _timer.Tick += (s, e) => { _game.Update(); _view.RefreshView(); };
             _timer.Start();
         }
 
-        private void LoadInitialMap()
+        private void LoadInitialMap(int lvlNum)
         {
-            _map = _serializator.LoadMap("Map.json");
+            _map = _serializator.LoadMap("Map" + lvlNum.ToString() + ".json");
             var spawnService = new SpawnOnMapService();
             (int plX, int plY) = spawnService.GetPlayerSpawn(_map);
 
             _game = new Game(_map, _input);
             _game.Objects.Add(new Elephant(3, 1, plX, plY, Direction.Up));
+            for (int i = 0; i < lvlNum; i++)
+            {
+
+            }
             _game.Objects.Add(new Enemy(2, 1, 10, 10, Direction.Left));
         }
 

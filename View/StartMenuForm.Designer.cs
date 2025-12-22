@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartMenuForm));
             btn1LVL = new Button();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // btn1LVL
@@ -43,12 +45,36 @@
             btn1LVL.UseVisualStyleBackColor = false;
             btn1LVL.Click += btn1LVL_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.Location = new Point(301, 195);
+            button1.Name = "button1";
+            button1.Size = new Size(225, 72);
+            button1.TabIndex = 1;
+            button1.Text = "2 уровень";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += btn2LVL_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ActiveCaption;
+            button2.Location = new Point(554, 195);
+            button2.Name = "button2";
+            button2.Size = new Size(225, 72);
+            button2.TabIndex = 2;
+            button2.Text = "3 уровень";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += btn3LVL_Click;
+            // 
             // StartMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(btn1LVL);
             Name = "StartMenuForm";
             Text = "Начало игры";
@@ -60,5 +86,7 @@
         #endregion
 
         private Button btn1LVL;
+        private Button button1;
+        private Button button2;
     }
 }

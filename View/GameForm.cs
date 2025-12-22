@@ -12,11 +12,11 @@ namespace elephantocracy
         private GamePresenter _presenter;
         public int CellSize { get; } = 20;
 
-        public GameForm()
+        public GameForm(int lvlNum)
         {
             InitializeComponent();
             DoubleBuffered = true;
-            _presenter = new GamePresenter(this);
+            _presenter = new GamePresenter(this, lvlNum);
         }
 
         public void RefreshView() => Invalidate();
