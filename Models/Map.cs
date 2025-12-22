@@ -7,21 +7,18 @@ namespace elephantocracy.Models
 {
     public class Map
     {
-        private int width;
-        private int height;
+        public int Width { get; set; }
+        public int Height { get; set; }
 
         private Block[,] blocks;
 
         public Map(int width, int height)
         {
-            this.width = width;
-            this.height = height;
+            this.Width = width;
+            this.Height = height;
 
             blocks = new Block[width, height];
         }
-
-        public int Width => width;
-        public int Height => height;
 
         public Block GetBlock(int x, int y)
         {
@@ -32,8 +29,8 @@ namespace elephantocracy.Models
 
         public bool InBounds(int x, int y)
         {
-            return x >= 0 && x < width &&
-                   y >= 0 && y < height;
+            return x >= 0 && x < Width &&
+                   y >= 0 && y < Height;
         }
 
         public bool IsWalkable(int x, int y)

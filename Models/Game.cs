@@ -7,10 +7,13 @@ using System.Text;
 
 namespace elephantocracy.Models
 {
-    public class Game
+    public class Game : ISerializableModel
     {
+        public string GetFileName() => "game";
+
+
         private readonly Map _map;
-        private readonly InputController _inputController;
+        private InputController _inputController;
 
         public List<IMapObject> Objects { get; set; }
 
@@ -130,6 +133,11 @@ namespace elephantocracy.Models
 
             foreach (var obj in deadObjects)
                 Objects.Remove(obj);
+        }
+
+        public void SetInputController(InputController input)
+        {
+            _inputController = input;
         }
     }
 }
