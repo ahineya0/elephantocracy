@@ -3,6 +3,7 @@ using elephantocracy.Interfaces;
 using elephantocracy.Models;
 using elephantocracy.Presenter;
 using elephantocracy.Services;
+using elephantocracy.View;
 
 namespace elephantocracy
 {
@@ -53,7 +54,7 @@ namespace elephantocracy
                 {
                     Block block = map.GetBlock(x, y);
                     Brush blockBrush = GetBrushForBlock(block);
-                    g.FillRectangle(blockBrush, x * CellSize, y * CellSize, CellSize, CellSize); 
+                    g.FillRectangle(blockBrush, x * CellSize, y * CellSize, CellSize, CellSize);
                     g.DrawRectangle(Pens.LightGray, x * CellSize, y * CellSize, CellSize, CellSize);
                 }
             }
@@ -67,7 +68,7 @@ namespace elephantocracy
                     Bubble => Brushes.LightSkyBlue,
                     _ => Brushes.Black
                 };
-               g.FillRectangle(brush, obj.X * CellSize, obj.Y * CellSize, CellSize, CellSize);
+                g.FillRectangle(brush, obj.X * CellSize, obj.Y * CellSize, CellSize, CellSize);
             }
         }
 
@@ -77,6 +78,13 @@ namespace elephantocracy
             if (!block.IsWalkable && block.Health >= 3) return Brushes.DarkRed;
             if (!block.IsWalkable && block.Health > 0) return Brushes.Orange;
             return Brushes.LightGreen;
+        }
+
+        private void GameForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            var menu = new StartMenuForm();
+            menu.Show();
         }
     }
 }

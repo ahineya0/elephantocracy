@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            SuspendLayout();
+            // 
+            // GameForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            BackColor = SystemColors.GrayText;
+            ClientSize = new Size(426, 427);
+            Name = "GameForm";
+            Text = "Уровень 1";
+            FormClosed += GameForm_FormClosed;
+            ResumeLayout(false);
         }
 
         #endregion

@@ -1,3 +1,5 @@
+using elephantocracy.View;
+
 namespace elephantocracy
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace elephantocracy
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new GameForm());
+            Application.Run(new StartMenuForm());
         }
     }
 }
