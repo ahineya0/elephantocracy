@@ -12,128 +12,124 @@ namespace elephantocracy.Models
         private readonly Map _map;
         private readonly InputController _inputController;
 
-        private readonly List<IMapObject> _mapObjects;
-        private readonly List<IMove> _movables;
-        private readonly List<IRotate> _rotatables;
-        private readonly List<IAttack> _attackers;
-        private readonly List<IEffect> _effects;
+        public List<IMapObject> Objects { get; set; }
 
         public Game(Map map, InputController inputController)
         {
             _map = map;
             _inputController = inputController;
-            IEnumerable<IMapObject> objects = map.GetObjects();
-
-            _mapObjects = objects.ToList();
-            _movables = objects.OfType<IMove>().ToList();
-            _rotatables = objects.OfType<IRotate>().ToList();
-            _attackers = objects.OfType<IAttack>().ToList();
-            _effects = objects.OfType<IEffect>().ToList();
+            Objects = new List<IMapObject>();  
         }
 
         public void Update()
         {
-            // Движение
-            var dir = _inputController.MoveDirection;
-            if (dir.HasValue)
-            {
-                foreach (var movable in _movables)
-                {
-                    if (movable is IMapObject obj)
-                    {
-                        int newX = obj.X;
-                        int newY = obj.Y;
-
-                        switch (dir.Value)
-                        {
-                            case Direction.Up: newY -= 1; break;
-                            case Direction.Down: newY += 1; break;
-                            case Direction.Left: newX -= 1; break;
-                            case Direction.Right: newX += 1; break;
-                        }
-
-                        if (_map.IsWalkable(newX, newY))
-                            movable.Move(dir.Value);
-                    }
-                }
-            }
-
-            // Стрельба
-            if (_inputController.FirePressed)
-            {
-                foreach (var attacker in _attackers)
-                {
-                    var fireResult = attacker.Fire();
-                    if (fireResult.HasValue)
-                        SpawnBubble(fireResult.Value);
-                }
-
-                _inputController.Reset();
-            }
-
-            // Для пузырей
-            foreach (var bubble in _mapObjects.OfType<Bubble>())
-            {
-                bubble.Move(bubble.Direction);
-                HandleBubbleCollisions();
-            }
-
-            // Очистка 
+            HandleMovement();
+            HandleShooting();
+            UpdateBubbles();
             Cleanup();
         }
+
+        private void HandleMovement()
+        {
+            var dir = _inputController.MoveDirection;
+            if (!dir.HasValue)
+                return;
+
+            foreach (var movable in Objects.OfType<IMove>())
+            {
+                if (movable is not IMapObject obj)
+                    continue;
+
+                var (newX, newY) = GetNextPosition(obj.X, obj.Y, dir.Value);
+
+                if (_map.IsWalkable(newX, newY))
+                    movable.Move(dir.Value);
+            }
+        }
+
+        private (int x, int y) GetNextPosition(int x, int y, Direction dir)
+        {
+            return dir switch
+            {
+                Direction.Up => (x, y - 1),
+                Direction.Down => (x, y + 1),
+                Direction.Left => (x - 1, y),
+                Direction.Right => (x + 1, y),
+                _ => (x, y)
+            };
+        }
+
+        private void HandleShooting()
+        {
+            if (!_inputController.FirePressed)
+                return;
+
+            var attackers = Objects.OfType<IAttack>().ToList();
+
+            foreach (var attacker in attackers)
+            {
+                var fireResult = attacker.Fire();
+                if (fireResult.HasValue)
+                    SpawnBubble(fireResult.Value);
+            }
+
+            _inputController.Reset();
+        }
+
 
         private void SpawnBubble(FireResult fire)
         {
             var bubble = new Bubble(fire.X, fire.Y, fire.Direction);
-
-            _map.AddMapObject(bubble);
-
-            _mapObjects.Add(bubble);
-            _movables.Add(bubble);
+            Objects.Add(bubble);
         }
-        
-        private void HandleBubbleCollisions()
+
+        private void UpdateBubbles()
         {
-            foreach (var bubble in _mapObjects.OfType<Bubble>())
+            foreach (var bubble in Objects.OfType<Bubble>())
             {
-                if (!_map.InBounds(bubble.X, bubble.Y))
+                bubble.Move(bubble.Direction);
+                HandleBubbleCollision(bubble);
+            }
+        }
+
+        private void HandleBubbleCollision(Bubble bubble)
+        {
+            if (!_map.InBounds(bubble.X, bubble.Y))
+            {
+                bubble.Destroy();
+                return;
+            }
+
+            var block = _map.GetBlock(bubble.X, bubble.Y);
+            if (block != null && !block.IsShootThrough)
+            {
+                if (block.IsDestructible)
+                    block.TakeDamage(1);
+
+                bubble.Destroy();
+                return;
+            }
+
+            foreach (var enemy in Objects.OfType<Enemy>())
+            {
+                if (enemy.X == bubble.X && enemy.Y == bubble.Y)
                 {
+                    enemy.TakeDamage(1);
                     bubble.Destroy();
-                    continue;
-                }
-
-                var block = _map.GetBlock(bubble.X, bubble.Y);
-                if (block != null && !block.IsShootThrough)
-                {
-                    if (block.IsDestructible)
-                        block.TakeDamage(1);
-
-                    bubble.Destroy();
-                    continue;
-                }
-
-                foreach (var enemy in _mapObjects.OfType<Enemy>())
-                {
-                    if (enemy.X == bubble.X && enemy.Y == bubble.Y)
-                    {
-                        enemy.TakeDamage(1);
-                        bubble.Destroy();
-                        break;
-                    }
+                    return;
                 }
             }
         }
 
         private void Cleanup()
         {
-            var deadBubbles = _mapObjects.OfType<Bubble>().Where(b => !b.IsAlive).ToList();
+            var deadObjects = Objects
+                .OfType<Bubble>()
+                .Where(b => !b.IsAlive)
+                .ToList();
 
-            foreach (var bubble in deadBubbles)
-            {
-                _map.RemoveMapObject(bubble);
-                _mapObjects.Remove(bubble);
-                _movables.Remove(bubble);
-            }
+            foreach (var obj in deadObjects)
+                Objects.Remove(obj);
         }
     }
 }

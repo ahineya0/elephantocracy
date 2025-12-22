@@ -12,16 +12,12 @@ namespace elephantocracy.Models
 
         private Block[,] blocks;
 
-        // map не знает чтo за объекты есть
-        private List<IMapObject> objectsOnMap;
-
         public Map(int width, int height)
         {
             this.width = width;
             this.height = height;
 
             blocks = new Block[width, height];
-            objectsOnMap = new List<IMapObject>();
         }
 
         public int Width => width;
@@ -64,21 +60,6 @@ namespace elephantocracy.Models
 
             if (blocks[x, y] != null && blocks[x, y].IsDestructible)
                 blocks[x, y] = null;
-        }
-
-        public void AddMapObject(IMapObject obj)
-        {
-            objectsOnMap.Add(obj);
-        }
-
-        public void RemoveMapObject(IMapObject obj)
-        {
-            objectsOnMap.Remove(obj);
-        }
-
-        public IEnumerable<IMapObject> GetObjects()
-        {
-            return objectsOnMap;
         }
     }
 }

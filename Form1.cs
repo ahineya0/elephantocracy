@@ -6,7 +6,6 @@ namespace elephantocracy
     public partial class Form1 : Form
     {
         private Game _game;
-        private Map _map;
         private InputController _input;
         private System.Windows.Forms.Timer _timer;
 
@@ -17,16 +16,14 @@ namespace elephantocracy
             InitializeComponent();
             DoubleBuffered = true;
 
-            _map = new Map(30, 30);
+            var map = new Map(30, 30);
             _input = new InputController(Keys.W, Keys.S, Keys.A, Keys.D, Keys.Space);
 
-            var player = new Elephant(3, 1, 5, 5, Direction.Up);
-            _map.AddMapObject(player);
+            _game = new Game(map, _input);
 
-            var enemy = new Enemy(2, 1, 10, 10, Direction.Left);
-            _map.AddMapObject(enemy);
+            _game.Objects.Add(new Elephant(3, 1, 5, 5, Direction.Up));
+            _game.Objects.Add(new Enemy(2, 1, 10, 10, Direction.Left));
 
-            _game = new Game(_map, _input);
 
             _timer = new System.Windows.Forms.Timer();
             _timer.Interval = 50;
@@ -55,7 +52,7 @@ namespace elephantocracy
         }
         private void DrawMap(Graphics g)
         {
-            foreach (var obj in _map.GetObjects())
+            foreach (var obj in _game.Objects)
             {
                 Brush brush = Brushes.Black;
 
@@ -66,7 +63,13 @@ namespace elephantocracy
                 else if (obj is Bubble)
                     brush = Brushes.LightSkyBlue;
 
-                g.FillRectangle(brush, obj.X * CellSize, obj.Y * CellSize, CellSize, CellSize);
+                g.FillRectangle(
+                    brush,
+                    obj.X * CellSize,
+                    obj.Y * CellSize,
+                    CellSize,
+                    CellSize
+                );
             }
         }
     }

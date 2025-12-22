@@ -6,7 +6,7 @@ namespace elephantocracy.Interfaces
 {
     public interface IEffect
     {
-        void ApplyTo(object target);
-        void RemoveFrom(object target);
+        void ApplyTo(IEntityStats target);
+        void RemoveFrom(IEntityStats target);
     }
 }
