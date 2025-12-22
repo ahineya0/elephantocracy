@@ -16,7 +16,7 @@ namespace elephantocracy.Models
         private readonly List<IMove> _movables;
         private readonly List<IRotate> _rotatables;
         private readonly List<IAttack> _attackers;
-        private readonly List<IEffectTarget> _effectTargets;
+        private readonly List<IEffect> _effects;
 
         public Game(Map map, InputController inputController)
         {
@@ -28,7 +28,7 @@ namespace elephantocracy.Models
             _movables = objects.OfType<IMove>().ToList();
             _rotatables = objects.OfType<IRotate>().ToList();
             _attackers = objects.OfType<IAttack>().ToList();
-            _effectTargets = objects.OfType<IEffectTarget>().ToList();
+            _effects = objects.OfType<IEffect>().ToList();
         }
 
         public void Update()

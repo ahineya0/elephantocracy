@@ -24,7 +24,7 @@ namespace elephantocracy.Models
             ElapsedTime += deltaTime;
         }
         public bool IsInactive => ElapsedTime > Duration;
-        public abstract void ApplyTo(object target);
-        public abstract void RemoveFrom(object target);
+        public abstract void ApplyTo(IEntityStats target);
+        public abstract void RemoveFrom(IEntityStats target);
     }
 }

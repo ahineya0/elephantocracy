@@ -12,19 +12,15 @@ namespace elephantocracy.Models.Effects
 
         public FreezingEffect(int x, int y, float duration) : base(x, y, duration) { }
 
-        public override void ApplyTo(object target)
+        public override void ApplyTo(IEntityStats target)
         {
-            if (target is IEntityStats stats)
-            {
-                _previousSpeed = stats.Speed;
-                stats.Speed = 0;
-            }
+            _previousSpeed = target.Speed;
+            target.Speed = 0;
         }
 
-        public override void RemoveFrom(object target)
+        public override void RemoveFrom(IEntityStats target)
         {
-            if (target is IEntityStats stats)
-                stats.Speed = _previousSpeed;
+            target.Speed = _previousSpeed;
         }
     }
 }
