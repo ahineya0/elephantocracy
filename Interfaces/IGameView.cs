@@ -8,6 +8,7 @@ namespace elephantocracy.Interfaces
     public interface IGameView
     {
         void RefreshView();
+        void ReturnToStartMenu();
         void ShowError(string message);
         void ShowMessage(string message);
         int CellSize { get; }
