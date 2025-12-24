@@ -23,7 +23,7 @@ namespace elephantocracy.Models
 
         public bool FirePressed
         {
-            get => _random.Next(0, 100) < 4;
+            get => _random.Next(0, 100) < 10;
         }
 
     }

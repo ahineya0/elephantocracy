@@ -9,6 +9,7 @@ namespace elephantocracy.Models
 {
     public class Game : ISerializableModel
     {
+        public event Action GameOver;
         public string GetFileName() => "game";
 
 
@@ -138,6 +139,7 @@ namespace elephantocracy.Models
         {
             Objects.RemoveAll(obj => obj is Bubble b && !b.IsAlive);
             Objects.RemoveAll(obj => obj is IEntityStats stats && stats.IsDead);
+            if (!Objects.OfType<Elephant>().Any()) GameOver?.Invoke();
         }
 
         public void SetInputController(InputController input)

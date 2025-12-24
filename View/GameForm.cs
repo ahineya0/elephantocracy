@@ -24,6 +24,12 @@ namespace elephantocracy
         public void ShowError(string message) => MessageBox.Show(message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         public void ShowMessage(string message) => MessageBox.Show(message, "Инфо");
+        public void ReturnToStartMenu()
+        {
+            Hide();
+            var menu = new StartMenuForm();
+            menu.Show();
+        }
 
         protected override void OnKeyDown(KeyEventArgs e)
         {

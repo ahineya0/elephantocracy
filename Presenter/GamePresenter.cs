@@ -16,7 +16,7 @@ namespace elephantocracy.Presenter
         private readonly InputController _input;
         private readonly Serializator _serializator;
         private readonly System.Windows.Forms.Timer _timer;
-
+        
         public Game Game => _game;
         public Map Map => _map;
 
@@ -42,6 +42,7 @@ namespace elephantocracy.Presenter
             (int plX, int plY) = spawnService.GetPlayerSpawn(_map);
 
             _game = new Game(_map, _input);
+            _game.GameOver += OnGameOver;
             _game.Objects.Add(new Elephant(3, 1, plX, plY, Direction.Up));
             for (int i = 0; i < lvlNum; i++)
             {
@@ -96,6 +97,13 @@ namespace elephantocracy.Presenter
             {
                 _view.ShowError($"Ошибка загрузки: {ex.Message}");
             }
+        }
+
+        private void OnGameOver()
+        {
+            _timer.Stop();
+            _view.ShowMessage("ВЫ ПРОИГРАЛИ");
+            _view.ReturnToStartMenu();
         }
     }
 }
