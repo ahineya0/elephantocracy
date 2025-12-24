@@ -136,10 +136,7 @@ namespace elephantocracy.Models
 
         private void Cleanup()
         {
-            var deadObjects = Objects.OfType<Bubble>().Where(b => !b.IsAlive).ToList();
-
-            foreach (var obj in deadObjects)
-                Objects.Remove(obj);
+            Objects.RemoveAll(obj => obj is Bubble b && !b.IsAlive);
             Objects.RemoveAll(obj => obj is IEntityStats stats && stats.IsDead);
         }
 
