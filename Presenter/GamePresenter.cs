@@ -20,11 +20,13 @@ namespace elephantocracy.Presenter
         public Game Game => _game;
         public Map Map => _map;
 
-        public GamePresenter(IGameView view, int lvlNum)
+        public GamePresenter(IGameView view, int lvlNum, bool IsWASD)
         {
             _view = view;
             _serializator = new Serializator("GameSaves" + lvlNum.ToString());
-            _input = new InputController(Keys.W, Keys.S, Keys.A, Keys.D, Keys.Space);
+
+            if (IsWASD) _input = new InputController(Keys.W, Keys.S, Keys.A, Keys.D, Keys.Space);
+            else _input = new InputController(Keys.Up, Keys.Down, Keys.Left, Keys.Right, Keys.Space);
 
             LoadInitialMap(lvlNum);
 

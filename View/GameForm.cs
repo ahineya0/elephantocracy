@@ -12,11 +12,11 @@ namespace elephantocracy
         private GamePresenter _presenter;
         public int CellSize { get; } = 20;
 
-        public GameForm(int lvlNum)
+        public GameForm(int lvlNum, bool IsWASD)
         {
             InitializeComponent();
             DoubleBuffered = true;
-            _presenter = new GamePresenter(this, lvlNum);
+            _presenter = new GamePresenter(this, lvlNum, IsWASD);
         }
 
         public void RefreshView() => Invalidate();

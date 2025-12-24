@@ -33,6 +33,7 @@
             btnLVL2 = new Button();
             btnLVL3 = new Button();
             tittle = new Label();
+            cbIsWASD = new CheckBox();
             SuspendLayout();
             // 
             // btn1LVL
@@ -78,12 +79,26 @@
             tittle.TabIndex = 3;
             tittle.Text = "elephantocracy";
             // 
+            // cbIsWASD
+            // 
+            cbIsWASD.AutoSize = true;
+            cbIsWASD.Checked = true;
+            cbIsWASD.CheckState = CheckState.Checked;
+            cbIsWASD.Location = new Point(63, 394);
+            cbIsWASD.Name = "cbIsWASD";
+            cbIsWASD.Size = new Size(128, 19);
+            cbIsWASD.TabIndex = 4;
+            cbIsWASD.Text = "Управление WASD";
+            cbIsWASD.UseVisualStyleBackColor = true;
+            cbIsWASD.CheckStateChanged += cbIsWASD_CheckStateChanged;
+            // 
             // StartMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(818, 450);
+            Controls.Add(cbIsWASD);
             Controls.Add(tittle);
             Controls.Add(btnLVL3);
             Controls.Add(btnLVL2);
@@ -102,5 +117,6 @@
         private Button btnLVL2;
         private Button btnLVL3;
         private Label tittle;
+        private CheckBox cbIsWASD;
     }
 }
