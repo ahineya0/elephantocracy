@@ -1,6 +1,7 @@
 ﻿using elephantocracy.Enums;
 using elephantocracy.Interfaces;
 using elephantocracy.Models;
+using elephantocracy.Presenter.RenderModels;
 using elephantocracy.Services;
 using System;
 using System.Collections.Generic;
@@ -104,6 +105,35 @@ namespace elephantocracy.Presenter
             _timer.Stop();
             _view.ShowMessage("ВЫ ПРОИГРАЛИ");
             _view.ReturnToStartMenu();
+        }
+
+        public IEnumerable<SectorRenderInfo> GetSectors()
+        {
+            var sectors = new List<SectorRenderInfo>();
+
+            for (int x = 0; x < _map.Width; x++)
+            {
+                for (int y = 0; y < _map.Height; y++)
+                {
+                    var block = _map.GetBlock(x, y);
+                    SectorType type;
+
+                    if (block == null)
+                        type = SectorType.Empty;
+                    else if (block.IsWalkable)
+                        type = SectorType.Grass;
+                    else if (block.Health >= 3)
+                        type = SectorType.SolidWall;
+                    else if (block.Health > 0)
+                        type = SectorType.DamagedWall;
+                    else
+                        type = SectorType.Empty;
+
+                    sectors.Add(new SectorRenderInfo(x, y, type));
+                }
+            }
+
+            return sectors;
         }
     }
 }
