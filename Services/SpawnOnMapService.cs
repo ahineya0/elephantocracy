@@ -5,11 +5,11 @@ using System.Text;
 
 namespace elephantocracy.Services
 {
-    public class SpawnOnMapService : ISpawnOnMapService
+    static class SpawnOnMapService
     {
         private const int SpawnHealthMarker = 67;
 
-        public (int X, int Y) GetPlayerSpawn(Map map)
+        public static (int X, int Y) GetPlayerSpawn(Map map)
         {
             for (int x = 0; x < map.Width; x++)
             {
@@ -35,9 +35,9 @@ namespace elephantocracy.Services
             }
             return (0, 0);
         }
-        private readonly Random _random = new Random();
+        private static Random _random = new Random();
 
-        public (int X, int Y) GetPlaceToSpawn(Map map)
+        public static (int X, int Y) GetPlaceToSpawn(Map map)
         {
             var walkableSpots = new List<(int X, int Y)>();
 

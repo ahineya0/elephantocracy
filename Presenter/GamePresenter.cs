@@ -39,15 +39,14 @@ namespace elephantocracy.Presenter
         private void LoadInitialMap(int lvlNum)
         {
             _map = _serializator.LoadMap("Map" + lvlNum.ToString() + ".json");
-            var spawnService = new SpawnOnMapService();
-            (int plX, int plY) = spawnService.GetPlayerSpawn(_map);
+            (int plX, int plY) = SpawnOnMapService.GetPlayerSpawn(_map);
 
             _game = new Game(_map, _input);
             _game.GameOver += OnGameOver;
             _game.Objects.Add(new Elephant(3, 1, plX, plY, Direction.Up));
             for (int i = 0; i < lvlNum; i++)
             {
-                (int enX, int enY) = spawnService.GetPlaceToSpawn(_map);
+                (int enX, int enY) = SpawnOnMapService.GetPlaceToSpawn(_map);
                 _game.Objects.Add(new Enemy(2, 1, enX, enY, Direction.Left));
             }
         }
